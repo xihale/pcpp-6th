@@ -1,0 +1,46 @@
+/* C++ Version Tags Styling */
+/* These styles render C++ version tags as inline elements with version information */
+
+cpp14, cpp20, cpp23 {
+    font-weight: 600;
+    font-size: 0.85em;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* C++14 styling - blue color */
+cpp14 {
+    background-color: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+}
+
+/* C++20 styling - purple color */
+cpp20 {
+    background-color: #e9d5ff;
+    color: #6b21a8;
+    border: 1px solid #d8b4fe;
+}
+
+/* C++23 styling - green color */
+cpp23 {
+    background-color: #064425;
+    color: #8ee6b0;
+    border: 1px solid #bbf7d0;
+}
+
+/* Optional: Add content for the tags using CSS generated content */
+cpp14::before {
+    content: "C++14";
+}
+
+cpp20::before {
+    content: "C++20";
+}
+
+cpp23::before {
+    content: "C++23";
+}
