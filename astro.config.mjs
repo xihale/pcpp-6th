@@ -9,6 +9,12 @@ export default defineConfig({
 	site: 'https://pcpp.xihale.top',
 	markdown: {
 		remarkPlugins: [ remarkGfm ],
+		shikiConfig:{
+			themes: {
+				dark: 'vitesse-dark',
+				light: 'vitesse-light'
+			}
+		}
 	},
 	integrations: [
 		starlight({
