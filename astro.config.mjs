@@ -8,13 +8,7 @@ import remarkGfm from 'remark-gfm';
 export default defineConfig({
 	site: 'https://pcpp.xihale.top',
 	markdown: {
-		remarkPlugins: [ remarkGfm ],
-		shikiConfig:{
-			themes: {
-				dark: 'vitesse-dark',
-				light: 'vitesse-light'
-			}
-		}
+		remarkPlugins: [ remarkGfm ]
 	},
 	integrations: [
 		starlight({
@@ -30,6 +24,12 @@ export default defineConfig({
 				// Import the custom CSS for C++ version tags
 				'./src/assets/style.css',
 			],
+			expressiveCode: {
+				themes: [
+					"vitesse-dark",
+					"vitesse-light"
+				]
+			},
 			sidebar: [
 				{
 					label: 'Professional C++ 6th',
