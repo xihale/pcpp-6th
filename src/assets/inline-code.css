@@ -1,0 +1,16 @@
+.sl-markdown-content :not(pre) > code:not(:where(.not-content *)) {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: var(--sl-color-text-accent);
+    font-weight: 500;
+    padding: 0;
+}
+
+.sl-markdown-content a > code:not(:where(.not-content *)) {
+    color: inherit;
+}
+
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) > code:not(:where(.not-content *)) {
+    font-weight: inherit;
+}
